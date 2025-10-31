@@ -1,0 +1,17 @@
+Proyecto: Conexión óptima entre sensores inteligentes
+
+Descripción: Una empresa de tecnología está instalando una red de sensores inteligentes para monitorear variables ambientales (temperatura, humedad, contaminación, etc.) en diferentes puntos de una ciudad.
+Cada sensor puede conectarse con otros sensores cercanos mediante enlaces inalámbricos, pero cada conexión tiene un costo de energía asociado, que depende de la distancia o intensidad de señal entre ellos.
+
+El objetivo es construir una red eficiente que conecte todos los sensores utilizando la menor cantidad total de energía posible.
+
+Notas:
+
+- Cada nodo representa un sensor.
+
+- Cada arista representa la conexión entre dos sensores.
+
+- El peso representa el costo energético de la comunicación.
+
+Algoritmo utilizado: Prim
+Estudiantes: Alex Zúñiga Monge / Ximena Cabezas Espinoza

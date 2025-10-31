@@ -19,7 +19,12 @@ Sensores instalados:
 
 Conexiones seleccionadas para la red optima:
 -------------------------------------------------
+1. Sensor_A <--> Sensor_B (Costo energetico: 42.4264 unidades)
+2. Sensor_B <--> Sensor_D (Costo energetico: 28.2843 unidades)
+3. Sensor_B <--> Sensor_E (Costo energetico: 31.6228 unidades)
+4. Sensor_D <--> Sensor_F (Costo energetico: 36.0555 unidades)
+5. Sensor_B <--> Sensor_C (Costo energetico: 44.7214 unidades)
 
 =================================================
-COSTO TOTAL DE ENERGIA: 0 unidades
+COSTO TOTAL DE ENERGIA: 183.11 unidades
 =================================================
