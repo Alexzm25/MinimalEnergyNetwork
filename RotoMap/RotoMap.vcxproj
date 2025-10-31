@@ -92,6 +92,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="GraphEdge.cpp" />
+    <ClCompile Include="GraphNode.cpp" />
+    <ClCompile Include="GraphScene.cpp" />
     <ClCompile Include="Node.cpp" />
     <QtRcc Include="MainWindow.qrc" />
     <QtUic Include="MainWindow.ui" />
@@ -100,8 +103,21 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="GraphEdge.h" />
+    <ClInclude Include="GraphNode.h" />
+    <ClInclude Include="GraphScene.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="WeightedGraph.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DIAGRAMA_SISTEMA.md" />
+    <None Include="INSTRUCCIONES_CONFIGURACION.md" />
+    <None Include="README.md" />
+    <None Include="SOLUCION_ERRORES.md" />
+    <None Include="verificar_qt.ps1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="RESUMEN.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
