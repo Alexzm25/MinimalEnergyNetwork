@@ -15,3 +15,6 @@ Notas:
 
 Algoritmo utilizado: Prim
 Estudiantes: Alex Zúñiga Monge / Ximena Cabezas Espinoza
+
+Sobre la IA: Fue utilizada para añadidos de la interfaz grafica y del dibujo del grafo en la interfaz grafica, y ventanas espontaneas.
+y el calculo de prim, tambien para arreglar varios errores y sacar dudas 

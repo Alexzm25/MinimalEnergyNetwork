@@ -51,16 +51,16 @@ void MainWindow::setupUI()
     
     // Configurar tabs
     ui.mainTabs->setTabText(0, "Red de Sensores");
-    ui.mainTabs->setTabText(1, "Árbol de Expansión Mínima");
+    ui.mainTabs->setTabText(1, "Arbol de Expansion Minima");
     
     // Configurar output
     ui.textEdit->setReadOnly(true);
-    ui.textEdit->setPlainText("Bienvenido al Sistema de Gestión de Red de Sensores\n"
+    ui.textEdit->setPlainText("Bienvenido al Sistema de Gestion de Red de Sensores\n"
                               "==================================================\n\n"
                               "Instrucciones:\n"
                               "1. Agregue sensores manualmente o genere un ejemplo\n"
-                              "2. El grafo se mostrará automáticamente\n"
-                              "3. Use la pestaña 'Árbol de Expansión Mínima' para calcular la red óptima\n");
+                              "2. El grafo se mostrara automaticamente\n"
+                              "3. Use la pestana 'Arbol de Expansion Minima' para calcular la red optima\n");
 }
 
 void MainWindow::setupConnections()
@@ -118,7 +118,7 @@ void MainWindow::onSaveRoutes()
 {
     QString filename = QFileDialog::getSaveFileName(
         this,
-        "Guardar configuración de sensores",
+        "Guardar configuracion de sensores",
         "sensores.txt",
         "Archivos de texto (*.txt);;Todos los archivos (*.*)"
     );
@@ -126,7 +126,7 @@ void MainWindow::onSaveRoutes()
     if (!filename.isEmpty()) {
         if (network.saveToFile(filename.toStdString())) {
             ui.textEdit->append("Sensores guardados en: " + filename + "\n");
-            QMessageBox::information(this, "Éxito", 
+            QMessageBox::information(this, "Exito", 
                 "Sensores guardados exitosamente en el archivo.");
         } else {
             QMessageBox::warning(this, "Error", 
@@ -143,14 +143,14 @@ void MainWindow::onGenerateExample()
     ui.textEdit->append("\n=== Sensores de Ejemplo Generados ===\n");
     const vector<Sensor*>& sensors = network.getGraph().getSensors();
     for (size_t i = 0; i < sensors.size(); i++) {
-        ui.textEdit->append(QString("• %1 - Posición: (%2, %3)")
+        ui.textEdit->append(QString("• %1 - Posicion: (%2, %3)")
             .arg(QString::fromStdString(sensors[i]->getName()))
             .arg(sensors[i]->getX())
             .arg(sensors[i]->getY()));
     }
     ui.textEdit->append("\n");
     
-    QMessageBox::information(this, "Éxito", 
+    QMessageBox::information(this, "Exito", 
         QString("Se generaron %1 sensores de ejemplo.").arg(sensors.size()));
 }
 
@@ -162,12 +162,12 @@ void MainWindow::onAddSensor()
     
     if (!ok || name.isEmpty()) return;
     
-    double x = QInputDialog::getDouble(this, "Posición X",
+    double x = QInputDialog::getDouble(this, "Posicion X",
         "Coordenada X:", 50.0, 0.0, 100.0, 1, &ok);
     
     if (!ok) return;
     
-    double y = QInputDialog::getDouble(this, "Posición Y",
+    double y = QInputDialog::getDouble(this, "Posicion Y",
         "Coordenada Y:", 50.0, 0.0, 100.0, 1, &ok);
     
     if (!ok) return;
@@ -178,7 +178,7 @@ void MainWindow::onAddSensor()
     ui.textEdit->append(QString("Sensor agregado: %1 en (%2, %3)\n")
         .arg(name).arg(x).arg(y));
     
-    QMessageBox::information(this, "Éxito", 
+    QMessageBox::information(this, "Exito", 
         "Sensor agregado exitosamente.");
 }
 
@@ -253,7 +253,7 @@ void MainWindow::onCalculateMST()
     // Mostrar resultados en texto
     ui.textEdit->clear();
     ui.textEdit->append("=================================================");
-    ui.textEdit->append("  ÁRBOL DE EXPANSIÓN MÍNIMA (Algoritmo de Prim)");
+    ui.textEdit->append("  ARBOL DE EXPANSION MÍNIMA (Algoritmo de Prim)");
     ui.textEdit->append("=================================================\n");
     
     ui.textEdit->append("Conexiones seleccionadas para la red óptima:\n");
