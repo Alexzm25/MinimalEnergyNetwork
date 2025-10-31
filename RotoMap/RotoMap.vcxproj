@@ -107,6 +107,8 @@
     <ClInclude Include="GraphNode.h" />
     <ClInclude Include="GraphScene.h" />
     <ClInclude Include="Node.h" />
+    <ClInclude Include="Sensor.h" />
+    <ClInclude Include="SensorNetwork.h" />
     <ClInclude Include="WeightedGraph.h" />
   </ItemGroup>
   <ItemGroup>
@@ -114,6 +116,7 @@
     <None Include="INSTRUCCIONES_CONFIGURACION.md" />
     <None Include="README.md" />
     <None Include="SOLUCION_ERRORES.md" />
+    <None Include="verificar_errores.ps1" />
     <None Include="verificar_qt.ps1" />
   </ItemGroup>
   <ItemGroup>
