@@ -84,8 +84,8 @@ void GraphScene::displayGraph(WeightedGraph& graph)
         if (sourceNode && destNode) {
             GraphEdge* graphEdge = new GraphEdge(sourceNode, destNode, edge.weight);
             addItem(graphEdge);
-            if (graphEdge->label) {
-                addItem(graphEdge->label);
+            if (graphEdge->getLabel()) {
+                addItem(graphEdge->getLabel());
             }
             allEdges.append(graphEdge);
         }

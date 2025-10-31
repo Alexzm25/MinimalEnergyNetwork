@@ -2,6 +2,7 @@
 #include "GraphNode.h"
 #include <QPainter>
 #include <cmath>
+#include <QGraphicsScene>
 
 GraphEdge::GraphEdge(GraphNode* source, GraphNode* dest, float weight)
     : source(source), dest(dest), weight(weight), isHighlighted(false), isInMST(false)

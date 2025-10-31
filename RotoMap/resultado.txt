@@ -1,0 +1,25 @@
+=================================================
+  CONEXION OPTIMA ENTRE SENSORES INTELIGENTES
+=================================================
+
+Total de sensores: 6
+
+Sensores instalados:
+-------------------------------------------------
+1. Sensor_A (Posicion: 10, 20)
+2. Sensor_B (Posicion: 40, 50)
+3. Sensor_C (Posicion: 80, 30)
+4. Sensor_D (Posicion: 60, 70)
+5. Sensor_E (Posicion: 30, 80)
+6. Sensor_F (Posicion: 90, 90)
+
+=================================================
+  ARBOL DE EXPANSION MINIMA (Algoritmo de Prim)
+=================================================
+
+Conexiones seleccionadas para la red optima:
+-------------------------------------------------
+
+=================================================
+COSTO TOTAL DE ENERGIA: 0 unidades
+=================================================

@@ -14,6 +14,7 @@ public:
     GraphNode* sourceNode() const { return source; }
     GraphNode* destNode() const { return dest; }
     float getWeight() const { return weight; }
+    QGraphicsTextItem* getLabel() const { return label; }
     
     void updatePosition();
     void setHighlighted(bool highlighted);
