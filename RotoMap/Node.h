@@ -1,11 +1,12 @@
 #pragma once
+#include "Sensor.h"
 
 struct Node {
-    int data;
     Node* next;
+    Sensor* sensor;
 
-    Node() : data(0), next(nullptr) {}
-    Node(int value) : data(value), next(nullptr) {}
-    Node(int value, Node* nextNode) : data(value), next(nextNode) {}
+    Node() : next(nullptr), sensor(nullptr) {}
+    Node(Sensor* value) : sensor(value), next(nullptr) {}
+    Node(Sensor* value, Node* nextNode) : sensor(value), next(nextNode) {}
 };
 
